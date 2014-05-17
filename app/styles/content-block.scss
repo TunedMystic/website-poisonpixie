@@ -1,0 +1,108 @@
+// Properties for product 'block'
+$block-size-small: 180px;
+$block-size-med: 190px;
+$block-size-big: 380px;
+$block-margin: 20px;
+
+$block-animate-time: 160ms;
+$block-animate-timing-function: ease-out;
+
+// Properties for product 'image'
+$image-animate-time: 300ms;
+$image-animate-timing-function: ease;
+$image-transition: width $image-animate-time $image-animate-timing-function, height $image-animate-time $image-animate-timing-function;
+
+$price-tag-color: #9BCAC5;
+
+body {
+  background-color: #EBEBEB;
+}
+
+.block {
+  width: $block-size-small;
+  height: $block-size-small;
+  
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  float: left;
+  
+  -webkit-transition: -webkit-transform $block-animate-time $block-animate-timing-function;
+     -moz-transition: -moz-transform $block-animate-time $block-animate-timing-function;
+       -o-transition: -o-transform $block-animate-time $block-animate-timing-function;
+          transition: transform $block-animate-time $block-animate-timing-function;
+}
+
+.block:hover {
+  -webkit-transform: translateY(-5px);
+     -moz-transform: translateY(-5px);
+       -o-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.block-one {
+
+}
+  
+.block-two {
+  margin: 0 $block-margin / 2 0 $block-margin / 2;
+  width: $block-size-big;
+  
+  .left {
+    width: $block-size-small;
+    height: $block-size-small;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    
+    img {
+      width: $block-size-small;
+      height: $block-size-small;
+      -webkit-transition: $image-transition;
+         -moz-transition: $image-transition;
+           -o-transition: $image-transition;
+          -ms-transition: $image-transition;
+              transition: $image-transition;
+    }
+    
+    img:hover {
+      width: $block-size-med;
+      height: $block-size-med;
+    }
+    
+    .price-tag {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px 10px;
+      background-color: $price-tag-color;
+    }
+  }
+  
+  .right {
+    width: $block-size-small;
+    height: $block-size-small;
+    position: relative;
+    float: right;
+    
+    background-color: #424361;
+    
+    .triangle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 14px 12px 0;
+      
+      top: ($block-size-small / 2) - 12px;
+      left: -13px;
+      
+      border-color: transparent #424361 transparent transparent;
+      line-height: 0px;
+      _border-color: #000000 #424361 #000000 #000000;
+      _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    }
+  }
+}

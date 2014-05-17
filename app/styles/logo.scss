@@ -1,0 +1,15 @@
+// Provides the font, whose icon is to be used as the logo graphic.
+// .flaticon-butterfly52
+@import '../fonts/logo/flaticon.css';
+
+$logo-color: #000000;
+$logo-color-hover: #BD25AA;
+
+.logo-icon {
+  font-size: 100px;
+  color: $logo-color;
+}
+
+.logo-icon:hover {
+  color: $logo-color-hover;
+}

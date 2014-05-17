@@ -4,6 +4,19 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
+//------------------------------------------------------
+//------------------------------------------------------
+//------------------------------------------------------
+
+@import 'shopping-cart.scss';
+@import 'content-block.scss';
+@import 'logo.scss';
+@import 'fonts.scss';
+
+//------------------------------------------------------
+//------------------------------------------------------
+//------------------------------------------------------
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -15,6 +28,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: Cabin-Regular;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
