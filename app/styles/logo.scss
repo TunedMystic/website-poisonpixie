@@ -5,11 +5,19 @@
 $logo-color: #000000;
 $logo-color-hover: #BD25AA;
 
+$background-color: #E0627B;
+$background-color-hover: #CCCCCC;
+
 .logo-icon {
-  font-size: 100px;
+  font-size: 90px; // 70px ..?
+  height: 140px;
+  float: left;
   color: $logo-color;
+  background-color: $background-color;
+  padding: 6px 14px 0 14px;
 }
 
 .logo-icon:hover {
   color: $logo-color-hover;
+  background-color: $background-color-hover;
 }

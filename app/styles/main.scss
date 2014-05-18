@@ -1,17 +1,17 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+// $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
 //------------------------------------------------------
 //------------------------------------------------------
 //------------------------------------------------------
 
-@import 'shopping-cart.scss';
+@import 'fonts.scss';
 @import 'content-block.scss';
 @import 'logo.scss';
-@import 'fonts.scss';
+@import 'header.scss';
 
 //------------------------------------------------------
 //------------------------------------------------------
@@ -26,8 +26,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
     font-family: Cabin-Regular;
 }
 
