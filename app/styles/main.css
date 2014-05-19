@@ -93,6 +93,7 @@ body {
   background-color: #cccccc; }
 
 #page-head {
+  min-width: 320px;
   position: relative;
   overflow: hidden; }
   #page-head .main-nav-outer {
@@ -123,17 +124,82 @@ body {
     @media only screen and (max-width: 768px) {
       #page-head .main-nav-outer {
         display: none; } }
+  #page-head .small-header {
+    display: none !important;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    background-color: #e5aeae; }
+    @media only screen and (max-width: 768px) {
+      #page-head .small-header {
+        display: block !important; } }
   #page-head .small-nav {
-    display: none; }
+    display: none !important;
+    visibility: hidden;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    width: 100%; }
+    #page-head .small-nav ul {
+      list-style: none;
+      display: inline-block;
+      float: left;
+      padding: 0px;
+      margin: 0px;
+      width: 60%;
+      background-color: #a32020; }
+      #page-head .small-nav ul li {
+        line-height: 80px; }
+        #page-head .small-nav ul li ul {
+          position: absolute;
+          display: none;
+          visibility: hidden;
+          padding: 0px;
+          margin: 0px;
+          padding-bottom: 15px; }
+          #page-head .small-nav ul li ul li {
+            line-height: 38px; }
+      #page-head .small-nav ul li:hover ul {
+        display: block;
+        visibility: visible; }
+    #page-head .small-nav .shopping-cart {
+      width: 40%;
+      display: inline-block;
+      padding: 0 20px 0 20px;
+      background-color: #6638aa; }
+      #page-head .small-nav .shopping-cart p {
+        margin: 0;
+        color: #4d83f5; }
+        #page-head .small-nav .shopping-cart p span.cart {
+          font-size: 50px;
+          padding: 15px 10px 15px 0; }
+        #page-head .small-nav .shopping-cart p span.cart-items {
+          line-height: 80px;
+          vertical-align: bottom;
+          font-size: 18px; }
+      @media only screen and (max-width: 520px) {
+        #page-head .small-nav .shopping-cart {
+          padding: 0px; }
+          #page-head .small-nav .shopping-cart p span.cart {
+            font-size: 26px;
+            padding: 27px 10px 27px 0; }
+          #page-head .small-nav .shopping-cart p span.cart-items {
+            line-height: 77px;
+            font-size: 15px; } }
     @media only screen and (max-width: 768px) {
       #page-head .small-nav {
-        display: block; }
-        #page-head .small-nav ul li ul {
-          display: none;
-          visibility: none; }
-        #page-head .small-nav ul li:hover ul {
-          display: block;
-          visibility: visible; } }
+        display: block !important;
+        visibility: visible; } }
+    @media only screen and (max-width: 470px) {
+      #page-head .small-nav ul {
+        display: block;
+        width: 100%;
+        z-index: 99; }
+      #page-head .small-nav .shopping-cart {
+        display: block;
+        width: 100%; } }
   #page-head .main-nav {
     position: relative;
     padding-left: 10px; }
@@ -158,6 +224,9 @@ body {
       margin: 0px;
       display: inline-block;
       padding-left: 20px; }
+  @media only screen and (max-width: 768px) {
+    #page-head {
+      overflow: visible; } }
 
 .browsehappy {
   margin: 0.2em 0;

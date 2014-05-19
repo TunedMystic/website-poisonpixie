@@ -3,6 +3,7 @@
 @import 'logo.scss';
 
 #page-head {
+  min-width: $site-min-width;
   
   // So the hidden cart would not make the screen x-scrollable.
   position: relative;
@@ -56,33 +57,131 @@
       display: none;
     }
   }
-  
-  .small-nav {
-    display: none;
-    
+
+  .small-header {
+    display: none !important;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: $logo-height-small;
+    height: $logo-height-small;
+    background-color: $small-header-background-color;
+
     @media only screen and (max-width: $screen-size-smartphone-landscape) {
-      display: block;
-      
-      ul {
-        li {
+      display: block !important;
+    }
+
+  }
+  
+  // The small nav and the small shopping cart
+  .small-nav {
+    display: none !important;
+    visibility: hidden;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+
+    // Nav drop-down
+    ul {
+      list-style: none;
+      display: inline-block;
+      float: left;
+      padding: 0px;
+      margin: 0px;
+      width: 60%;
+      background-color: $small-nav-background-color;
+
+      li {
+        line-height: $main-nav-height;
+        
+        ul {
+          position: absolute;
+          display: none;
+          visibility: hidden;
+          padding: 0px;
+          margin: 0px;
+          padding-bottom: 15px;
           
-          ul {
-            display: none;
-            visibility: none;
+          li {
+            line-height: $small-nav-sub-menu-line-height;
           }
-        }
-        
-        li:hover {
-          
-        }
-        
-        li:hover ul {
-          display: block;
-          visibility: visible;
-          // http://cssdeck.com/labs/another-simple-css3-dropdown-menu
+
         }
       }
       
+      li:hover {
+        
+      }
+      
+      li:hover ul {
+        display: block;
+        visibility: visible;
+        // http://cssdeck.com/labs/another-simple-css3-dropdown-menu
+      }
+    }
+
+    // small shopping-cart
+    .shopping-cart {
+      width: 40%;
+      display: inline-block;
+      padding: 0 20px 0 20px;
+      background-color: $shopping-cart-background;
+      
+      p {
+        margin: 0;
+        color: $main-nav-color;
+        
+        span.cart {
+          font-size: $shopping-cart-icon-font-size;
+          // center the shopping cart icon with top and bottom padding
+          padding: (($main-nav-height - $shopping-cart-icon-font-size) / 2) 10px (($main-nav-height - $shopping-cart-icon-font-size) / 2) 0;
+        }
+        
+        span.cart-items {
+          line-height: $main-nav-height;
+          vertical-align: bottom;
+          font-size: $shopping-cart-font-size;
+        }
+        
+      }
+
+      // Small shopping cart
+      @media only screen and (max-width: 520px) {
+        
+        padding: 0px;
+
+        p {
+          span.cart {
+            font-size: 26px;
+            padding: 27px 10px 27px 0;
+          }
+          span.cart-items {
+            line-height: 77px;
+            font-size: 15px;
+          }
+        }
+      }
+
+    }
+
+    // .small-nav
+    @media only screen and (max-width: $screen-size-smartphone-landscape) {
+      display: block !important;
+      visibility: visible;
+    }
+    // Make the small-nav and shopping-cart stack on top one another
+    @media only screen and (max-width: 470px) {
+      ul {
+        display: block;
+        width: 100%;
+        z-index: 99;
+      }
+      .shopping-cart {
+        display: block;
+        width: 100%;
+      }
     }
   }
 
@@ -121,4 +220,9 @@
       padding-left: 20px;
     }
   }
+
+  // #page-head
+  @media only screen and (max-width: $screen-size-smartphone-landscape) {
+      overflow: visible;
+    }
 }
