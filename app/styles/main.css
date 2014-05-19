@@ -1,0 +1,236 @@
+@import url(../fonts/logo/flaticon.css);
+@font-face {
+  font-family: 'PassionOne-Regular';
+  src: url("../fonts/passion-one/PassionOne-Regular.otf"); }
+@font-face {
+  font-family: 'Cabin-Regular';
+  src: url("../fonts/cabin/Cabin-Regular.otf"); }
+@font-face {
+  font-family: 'Cabin-Bold';
+  src: url("../fonts/cabin/Cabin-Bold.otf"); }
+body {
+  background-color: #EBEBEB; }
+
+.block {
+  width: 180px;
+  height: 180px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  -webkit-transition: -webkit-transform 160ms ease-out;
+  -moz-transition: -moz-transform 160ms ease-out;
+  -o-transition: -o-transform 160ms ease-out;
+  transition: transform 160ms ease-out; }
+
+.block:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px); }
+
+.block-two {
+  margin: 0 10px 0 10px;
+  width: 380px; }
+  .block-two .left {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    float: left; }
+    .block-two .left img {
+      width: 180px;
+      height: 180px;
+      -webkit-transition: width 300ms ease, height 300ms ease;
+      -moz-transition: width 300ms ease, height 300ms ease;
+      -o-transition: width 300ms ease, height 300ms ease;
+      -ms-transition: width 300ms ease, height 300ms ease;
+      transition: width 300ms ease, height 300ms ease; }
+    .block-two .left img:hover {
+      width: 190px;
+      height: 190px; }
+    .block-two .left .price-tag {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px 10px;
+      background-color: #9bcac5; }
+  .block-two .right {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    float: right;
+    background-color: #424361; }
+    .block-two .right .triangle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 14px 12px 0;
+      top: 78px;
+      left: -13px;
+      border-color: transparent #424361 transparent transparent;
+      line-height: 0px;
+      _border-color: #000000 #424361 #000000 #000000;
+      _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
+
+.logo-icon {
+  font-size: 90px;
+  height: 130px;
+  float: left;
+  color: black;
+  background-color: #e0627b;
+  padding: 0px 14px; }
+  @media only screen and (max-width: 1224px) {
+    .logo-icon {
+      font-size: 60px;
+      height: 80px;
+      padding: 0px 8px; } }
+
+.logo-icon:hover {
+  color: #bd25aa;
+  background-color: #cccccc; }
+
+#page-head {
+  position: relative;
+  overflow: hidden; }
+  #page-head .main-nav-outer {
+    overflow: auto;
+    background-color: #2b44a7; }
+    #page-head .main-nav-outer .shopping-cart {
+      position: absolute;
+      z-index: 99;
+      padding: 0 20px 0 20px;
+      background-color: #6638aa;
+      right: -118px;
+      -webkit-transition: right 300ms ease-in; }
+      #page-head .main-nav-outer .shopping-cart p {
+        margin: 0;
+        color: #4d83f5; }
+        #page-head .main-nav-outer .shopping-cart p span.cart {
+          font-size: 50px;
+          padding: 15px 10px 15px 0; }
+        #page-head .main-nav-outer .shopping-cart p span.cart-items {
+          line-height: 80px;
+          vertical-align: bottom;
+          font-size: 18px; }
+      @media only screen and (max-width: 768px) {
+        #page-head .main-nav-outer .shopping-cart {
+          right: 0; } }
+    #page-head .main-nav-outer .shopping-cart:hover {
+      right: 0; }
+    @media only screen and (max-width: 768px) {
+      #page-head .main-nav-outer {
+        display: none; } }
+  #page-head .small-nav {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      #page-head .small-nav {
+        display: block; }
+        #page-head .small-nav ul li ul {
+          display: none;
+          visibility: none; }
+        #page-head .small-nav ul li:hover ul {
+          display: block;
+          visibility: visible; } }
+  #page-head .main-nav {
+    position: relative;
+    padding-left: 10px; }
+    #page-head .main-nav li a {
+      line-height: 70px;
+      padding: 5px 10px;
+      font-size: 20px;
+      font-family: Cabin-Bold;
+      color: #4d83f5; }
+    #page-head .main-nav li a:hover {
+      background-color: #2b44a7;
+      color: #7fb5ff; }
+    @media only screen and (max-width: 768px) {
+      #page-head .main-nav {
+        margin: 0; } }
+  #page-head .news {
+    background-color: #2c2949; }
+    #page-head .news p {
+      color: #f5b86b;
+      font-size: 16px;
+      line-height: 50px;
+      margin: 0px;
+      display: inline-block;
+      padding-left: 20px; }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* Space out content a bit */
+body {
+  font-family: Cabin-Regular; }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  /* Make the masthead heading the same height as the navigation */ }
+  .header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px; }
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5; }
+  .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px; }
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0; }
+  .marketing p + h4 {
+    margin-top: 28px; }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px; }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px; }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0; } }
+.sampleblock {
+  width: 380px;
+  height: 180px;
+  background-color: blue;
+  margin: 10px;
+  display: inline-block; }

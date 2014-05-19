@@ -1,23 +1,24 @@
+@import 'variables.scss';
 // Provides the font, whose icon is to be used as the logo graphic.
 // .flaticon-butterfly52
 @import '../fonts/logo/flaticon.css';
 
-$logo-color: #000000;
-$logo-color-hover: #BD25AA;
-
-$background-color: #E0627B;
-$background-color-hover: #CCCCCC;
-
 .logo-icon {
-  font-size: 90px; // 70px ..?
-  height: 140px;
+  font-size: $logo-font-size;
+  height: $logo-height;
   float: left;
   color: $logo-color;
-  background-color: $background-color;
-  padding: 6px 14px 0 14px;
+  background-color: $logo-background-color;
+  padding: 0px 14px;
+  
+  @media only screen and (max-width: $screen-size-ipad-landscape) {
+    font-size: $logo-font-size-small;
+    height: $logo-height-small;
+    padding: 0px 8px;
+  }
 }
 
 .logo-icon:hover {
   color: $logo-color-hover;
-  background-color: $background-color-hover;
+  background-color: $logo-background-color-hover;
 }

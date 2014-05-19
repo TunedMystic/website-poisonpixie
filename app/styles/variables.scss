@@ -1,0 +1,64 @@
+
+
+//----------------------------------------------
+//------------------- Logo ---------------------
+
+$logo-font-size: 90px;
+$logo-height: 130px;
+$logo-color: #000000;
+$logo-background-color: #E0627B;
+$logo-color-hover: #BD25AA;
+$logo-background-color-hover: #CCCCCC;
+
+$logo-font-size-small: 60px;
+$logo-height-small: 80px;
+
+
+//----------------------------------------------
+//----------------- Main Nav -------------------
+
+$main-nav-color: #4D83F5;
+$main-nav-background-color: #2B44A7;
+$main-nav-color-highlight: $main-nav-color + 50;
+$main-nav-height: 80px;
+$main-nav-line-height: 70px;
+$main-nav-padding: ($main-nav-height - $main-nav-line-height) / 2 10px;
+//$main-nav-padding: 5px 10px;
+$main-nav-font-size: 20px;
+
+$news-background-color: #2C2949;
+$news-color: #F5B86B;
+$news-font-size: 16px;
+
+$shopping-cart-background: #6638AA;
+$shopping-cart-icon-font-size: 50px;
+$shopping-cart-font-size: 18px;
+
+//----------------------------------------------
+//------------- Media Query sizes --------------
+
+$screen-size-desktop: 1824px;
+$screen-size-ipad-landscape: 1224px;
+$screen-size-ipad-portrait: 1024px;
+$screen-size-smartphone-landscape: 768px;
+$screen-size-smartphone-portrait: 640px;
+$screen-size-smartphone-small: 321px;
+
+@media only screen and (max-width: $screen-size-desktop) {
+  
+}
+@media only screen and (max-width: $screen-size-ipad-landscape) {
+  
+}
+@media only screen and (max-width: $screen-size-ipad-portrait) {
+  
+}
+@media only screen and (max-width: $screen-size-smartphone-landscape) {
+  
+}
+@media only screen and (max-width: $screen-size-smartphone-portrait) {
+  
+}
+@media only screen and (max-width: $screen-size-smartphone-small) {
+  
+}

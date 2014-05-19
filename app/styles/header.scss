@@ -1,11 +1,6 @@
 
-
-$main-nav-background-color: #2B44A7;
-$main-nav-front-color: #4D83F5;
-$main-nav-front-highlight: $main-nav-front-color + 50;
-
-$news-background-color: #2C2949;
-$news-front-color: #F5B86B;
+@import 'variables.scss';
+@import 'logo.scss';
 
 #page-head {
   
@@ -19,64 +14,111 @@ $news-front-color: #F5B86B;
     
     .shopping-cart {
       position: absolute;
-      padding-right: 20px;
-      // right: 0; // Float to right...
-      right: -133px; // Only Cart is visible (no text)
+      z-index: 99;
+      padding: 0 20px 0 20px;
+      background-color: $shopping-cart-background;
+      right: -118px; // Only Cart is visible (no text)
       
       //Testing the transition right now...
-      -webkit-transition: right 400ms ease-in;
+      -webkit-transition: right 300ms ease-in;
       
       p {
-        height: 100px;
+        // height: 100px;
         margin: 0;
-        color: $main-nav-front-color;
+        color: $main-nav-color;
         
         span.cart {
-          font-size: 50px;
-          padding: 25px 10px 25px 0;
+          font-size: $shopping-cart-icon-font-size;
+          // center the shopping cart icon with top and bottom padding
+          padding: (($main-nav-height - $shopping-cart-icon-font-size) / 2) 10px (($main-nav-height - $shopping-cart-icon-font-size) / 2) 0;
         }
         
         span.cart-items {
-          line-height: 100px;
+          line-height: $main-nav-height;
           vertical-align: bottom;
-          font-size: 18px;
-          padding-right: 11px;
+          font-size: $shopping-cart-font-size;
         }
         
+      }
+      
+      // shopping-cart
+      @media only screen and (max-width: $screen-size-smartphone-landscape) {
+        right: 0;
       }
     }
     
     .shopping-cart:hover {
       right: 0; // Cart and contents is visible
     }
+    
+    // main-nav-outer
+    @media only screen and (max-width: $screen-size-smartphone-landscape) {
+      display: none;
+    }
+  }
+  
+  .small-nav {
+    display: none;
+    
+    @media only screen and (max-width: $screen-size-smartphone-landscape) {
+      display: block;
+      
+      ul {
+        li {
+          
+          ul {
+            display: none;
+            visibility: none;
+          }
+        }
+        
+        li:hover {
+          
+        }
+        
+        li:hover ul {
+          display: block;
+          visibility: visible;
+          // http://cssdeck.com/labs/another-simple-css3-dropdown-menu
+        }
+      }
+      
+    }
   }
 
   .main-nav {
     position: relative;
+    padding-left: 10px;
     li {
       a {
-        line-height: 70px;
-        font-size: 30px;
-        font-family: PassionOne-Regular;
-        color: $main-nav-front-color;
+        line-height: $main-nav-line-height;
+        padding: $main-nav-padding;
+        font-size: $main-nav-font-size;
+        //font-family: PassionOne-Regular;
+        font-family: Cabin-Bold;
+        color: $main-nav-color;
       }
       
       a:hover {
         background-color: $main-nav-background-color;
-        color: $main-nav-front-highlight;
+        color: $main-nav-color-highlight;
       }
+    }
+    
+    @media only screen and (max-width: $screen-size-smartphone-landscape) {
+       margin: 0;
     }
   }
 
   .news {
     background-color: $news-background-color;
     p {
-      color: $news-front-color;
-      font-size: 18px;
-      line-height: 40px;
+      color: $news-color;
+      font-size: $news-font-size;
+      line-height: $logo-height - $main-nav-height;
       margin: 0px;
       display: inline-block;
-      padding-left: 14px;
+      padding-left: 20px;
     }
   }
 }
