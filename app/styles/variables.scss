@@ -45,6 +45,29 @@ $shopping-cart-icon-font-size: 50px;
 $shopping-cart-font-size: 18px;
 
 //----------------------------------------------
+//-------------------- Block -------------------
+
+// Properties for product 'block'
+$block-size-small: 180px;
+$block-size-med: 190px;
+$block-size-big: 380px;
+$block-margin: 10px;
+
+$block-animate-time: 160ms;
+$block-animate-timing-function: ease-out;
+
+// Properties for product 'image'
+$image-animate-time: 300ms;
+$image-animate-timing-function: ease;
+$image-transition: width $image-animate-time $image-animate-timing-function, height $image-animate-time $image-animate-timing-function;
+
+$price-tag-color: #9BCAC5;
+
+//----------------------------------------------
+//-------------------- Body --------------------
+
+
+//----------------------------------------------
 //------------- Media Query sizes --------------
 
 $screen-size-desktop: 1824px;
