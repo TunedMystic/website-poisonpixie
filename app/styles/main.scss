@@ -12,6 +12,9 @@
 @import 'content-block.scss';
 @import 'header.scss';
 @import 'body.scss';
+@import 'footer.scss';
+
+@import 'signup.scss';
 
 //------------------------------------------------------
 //------------------------------------------------------
@@ -29,6 +32,7 @@ body {
     // padding-top: 20px;
     // padding-bottom: 20px;
     font-family: Cabin-Regular;
+    font-family: Abeezee-Regular;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

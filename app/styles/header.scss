@@ -18,7 +18,7 @@
       z-index: 99;
       padding: 0 20px 0 20px;
       background-color: $shopping-cart-background;
-      right: -118px; // Only Cart is visible (no text)
+      right: -114px; // Only Cart is visible (no text)
       
       //Testing the transition right now...
       -webkit-transition: right 300ms ease-in;
@@ -189,13 +189,17 @@
     position: relative;
     padding-left: 10px;
     li {
+      padding: 0px 10px;
+      
       a {
         line-height: $main-nav-line-height;
         padding: $main-nav-padding;
         font-size: $main-nav-font-size;
         //font-family: PassionOne-Regular;
         font-family: Cabin-Bold;
+        font-family: Abeezee-Regular;
         color: $main-nav-color;
+        font-weight: bold;
       }
       
       a:hover {

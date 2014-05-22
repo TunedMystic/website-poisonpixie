@@ -1,11 +1,14 @@
 @import 'variables.scss';
+@import 'masonry-mixins.scss';
 
 body {
   background-color: #EBEBEB;
 }
 
 .block-outer {
-  
+  .newsletter-background {
+    background-color: $newsletter-background-color;
+  }
 }
 
 .block {
@@ -64,6 +67,7 @@ body {
     img:hover {
       width: $block-size-med;
       height: $block-size-med;
+      opacity: 0.8;
     }
     
     .price-tag {
@@ -80,8 +84,46 @@ body {
     height: $block-size-small;
     position: relative;
     float: right;
+    padding: 20px;
     
     background-color: #424361;
+    
+    .dress-title {
+      font-size: 20px;
+      font-family: Cabin-Bold;
+      color: $dress-title-color;
+      
+      // creator's name section
+      span {
+        display: block;
+        margin-top: 18px;
+        font-size: 14px;
+        
+        // creator's name
+        span {
+          display: inline;
+          font-size: 18px;
+          color: $dress-title-creator-color;
+          cursor: pointer;
+        }
+      }
+    } // .dress-title
+    
+    .add-to-cart {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 4px 19px 2px 19px;
+      background-color: $add-to-cart-background-color;
+      
+      span {
+        font-size: 18px;
+      }
+    }
+    .add-to-cart:hover {
+      background-color: $add-to-cart-background-color-hover;
+      cursor: pointer;
+    }
     
     .triangle {
       position: absolute;
@@ -99,4 +141,132 @@ body {
       _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
     }
   }
+  
+  .signup form{
+    margin-top: 18.5px;
+  }
+  
+  // social blocks
+  .social {
+    width: 380px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    font-size: 22px;
+    
+    p, h3 {
+      position: absolute;
+      margin: 0;      
+      cursor: pointer;
+    }
+    
+    .inner {
+      width: 380px;
+      height: 180px;
+      
+      -webkit-transition: $image-transition;
+         -moz-transition: $image-transition;
+           -o-transition: $image-transition;
+          -ms-transition: $image-transition;
+              transition: $image-transition;
+      
+      cursor: default;
+    }
+    .inner:hover {
+      width: 400px;
+      height: 189px;
+      
+      opacity: 0.9;
+    }
+  }
+
+  .facebook {
+    p {     
+        top: 50%;
+        margin-top: -15.5px;
+        
+        left: 50%;
+        margin-left: -123.5px;
+      }
+  }
+  .twitter {
+    p {     
+        top: 50%;
+        margin-top: -15.5px;
+        
+        left: 50%;
+        margin-left: -107px;
+      }
+  }
+  .vimeo {
+    p {     
+        top: 50%;
+        margin-top: -15.5px;
+        
+        left: 50%;
+        margin-left: -117px;
+      }
+  }
+  .blog {
+    p, h3 {     
+        top: 50%;
+        left: 50%; 
+    }   
+  }  // .blog
+  
+  .ad-lion {
+    p {
+      margin-top: -20px;
+      margin-left: -65px;
+      cursor: default;
+    }
+    h3 {
+      font-size: 26px;
+      margin-top: 20px;
+      margin-left: -94px;
+    }
+  } // .ad-lion
+  
+  .ad-nature {
+    p {
+      margin-top: -20px;
+      margin-left: -65px;
+      cursor: default;
+    }
+    h3 {
+      font-size: 26px;
+      margin-top: 20px;
+      margin-left: -94px;
+    }
+  } // .ad-nature
+  
+  .ad-city {
+    p {
+      margin-top: -20px;
+      margin-left: -65px;
+      cursor: default;
+    }
+    h3 {
+      font-size: 26px;
+      margin-top: 20px;
+      margin-left: -94px;
+    }
+  } // .ad-city
+  
+  .ad-accessories {
+    p {
+      margin-top: -20px;
+      margin-left: -65px;
+      cursor: default;
+    }
+    h3 {
+      font-size: 26px;
+      margin-top: 20px;
+      margin-left: -94px;
+    }
+  } // .ad-accessories
+}
+
+.notblock-outer {
+  @include masonry-transitions(0.4s, ease-in, 0.4s, ease-in, 0.4s);
 }

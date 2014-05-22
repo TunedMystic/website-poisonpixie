@@ -34,15 +34,15 @@ $main-nav-height: 80px;
 $main-nav-line-height: 70px;
 $main-nav-padding: ($main-nav-height - $main-nav-line-height) / 2 10px;
 //$main-nav-padding: 5px 10px;
-$main-nav-font-size: 20px;
+$main-nav-font-size: 18px;
 
 $news-background-color: #2C2949;
 $news-color: #F5B86B;
-$news-font-size: 16px;
+$news-font-size: 13px;
 
 $shopping-cart-background: #6638AA;
 $shopping-cart-icon-font-size: 50px;
-$shopping-cart-font-size: 18px;
+$shopping-cart-font-size: 16px;
 
 //----------------------------------------------
 //-------------------- Block -------------------
@@ -51,7 +51,8 @@ $shopping-cart-font-size: 18px;
 $block-size-small: 180px;
 $block-size-med: 190px;
 $block-size-big: 380px;
-$block-margin: 10px;
+//$block-margin: 10px;
+$block-margin: 20px;
 
 $block-animate-time: 160ms;
 $block-animate-timing-function: ease-out;
@@ -59,13 +60,26 @@ $block-animate-timing-function: ease-out;
 // Properties for product 'image'
 $image-animate-time: 300ms;
 $image-animate-timing-function: ease;
-$image-transition: width $image-animate-time $image-animate-timing-function, height $image-animate-time $image-animate-timing-function;
+$image-transition: width $image-animate-time $image-animate-timing-function, height $image-animate-time $image-animate-timing-function, opacity $image-animate-time $image-animate-timing-function;
 
 $price-tag-color: #9BCAC5;
+
+$add-to-cart-background-color: #AFC948;
+$add-to-cart-background-color-hover: #CAC65F;
+
+$newsletter-background-color: #6E6288;
+
+$dress-title-color: #e2d2ff;
+$dress-title-creator-color: #87e035;
 
 //----------------------------------------------
 //-------------------- Body --------------------
 
+
+//----------------------------------------------
+//------------------- Footer -------------------
+$footer-background-color: #151222;
+$footer-color: #B45FA0;
 
 //----------------------------------------------
 //------------- Media Query sizes --------------
