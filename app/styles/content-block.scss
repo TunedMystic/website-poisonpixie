@@ -1,6 +1,79 @@
 @import 'variables.scss';
 @import 'masonry-mixins.scss';
 
+
+@mixin blog-title($key) {
+  font-family: Cabin-Bold;
+  
+  @if $key == "green" {
+    color: $blog-green-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-green-title-shadow-color;
+  }
+  @else if $key == "orange" {
+    color: $blog-orange-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-orange-title-shadow-color;
+  }
+  @else if $key == "red" {
+    color: $blog-red-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-red-title-shadow-color;
+  }
+  @else if $key == "dark" {
+    color: $blog-dark-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-dark-title-shadow-color;
+  }
+  @else {
+    color: $blog-dark-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-dark-title-shadow-color;
+  }
+}
+
+@mixin blog-sub-title($key) {
+  @if $key == "green" {
+    color: $blog-green-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-green-title-shadow-color;
+  }
+  @else if $key == "orange" {
+    color: $blog-orange-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-orange-title-shadow-color;
+  }
+  @else if $key == "red" {
+    color: $blog-red-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-red-title-shadow-color;
+  }
+  @else if $key == "dark" {
+    color: $blog-dark-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-dark-title-shadow-color;
+  }
+  @else {
+    color: $blog-dark-title-color;
+    text-shadow: 1.5px 1.5px 1.4px $blog-dark-title-shadow-color;
+  }
+}
+
+@mixin faded-hr($key) {
+  position: absolute;
+  width: 70%;
+  margin: 0;
+  margin-left: 57px;
+  top: 106px;
+  border: 0;
+  height: 1px;
+  @if ($key == "light") {
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(241, 241, 241, 0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(241, 241, 241, 0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(241, 241, 241, 0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(241, 241, 241, 0.75), rgba(0,0,0,0));
+  }
+  @else {
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  }
+}
+
+
+
 body {
   background-color: #EBEBEB;
 }
@@ -211,7 +284,7 @@ body {
     p, h3 {     
         top: 50%;
         left: 50%; 
-    }   
+    }  
   }  // .blog
   
   .ad-lion {
@@ -219,11 +292,20 @@ body {
       margin-top: -20px;
       margin-left: -65px;
       cursor: default;
+      
+      @include blog-sub-title("red");
     }
+    
+    hr {
+        @include faded-hr("");
+    }
+      
     h3 {
       font-size: 26px;
       margin-top: 20px;
       margin-left: -94px;
+      
+      @include blog-title("red");
     }
   } // .ad-lion
   
@@ -232,11 +314,20 @@ body {
       margin-top: -20px;
       margin-left: -65px;
       cursor: default;
+      
+      @include blog-sub-title("dark");
     }
+    
+    hr {
+        @include faded-hr("");
+    }
+    
     h3 {
       font-size: 26px;
       margin-top: 20px;
-      margin-left: -94px;
+      margin-left: -91.5px;
+      
+      @include blog-title("dark");
     }
   } // .ad-nature
   
@@ -245,11 +336,20 @@ body {
       margin-top: -20px;
       margin-left: -65px;
       cursor: default;
+      
+      @include blog-sub-title("green");
     }
+    
+    hr {
+        @include faded-hr("");
+    }
+    
     h3 {
       font-size: 26px;
       margin-top: 20px;
-      margin-left: -94px;
+      margin-left: -63.5px;
+      
+      @include blog-title("green");
     }
   } // .ad-city
   
@@ -258,11 +358,20 @@ body {
       margin-top: -20px;
       margin-left: -65px;
       cursor: default;
+      
+      @include blog-sub-title("orange");
     }
+    
+    hr {
+        @include faded-hr("light");
+    }
+    
     h3 {
       font-size: 26px;
       margin-top: 20px;
-      margin-left: -94px;
+      margin-left: -95px;
+      
+      @include blog-title("orange");
     }
   } // .ad-accessories
 }

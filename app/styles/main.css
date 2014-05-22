@@ -88,7 +88,7 @@ body {
     .block-two .right .dress-title {
       font-size: 20px;
       font-family: Cabin-Bold;
-      color: #e2d2ff; }
+      color: #e7e1f3; }
       .block-two .right .dress-title span {
         display: block;
         margin-top: 18px;
@@ -167,35 +167,103 @@ body {
   .block-two .ad-lion p {
     margin-top: -20px;
     margin-left: -65px;
-    cursor: default; }
+    cursor: default;
+    color: #ec2b2b;
+    text-shadow: 1.5px 1.5px 1.4px rgba(58, 20, 8, 0.8); }
+  .block-two .ad-lion hr {
+    position: absolute;
+    width: 70%;
+    margin: 0;
+    margin-left: 57px;
+    top: 106px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent); }
   .block-two .ad-lion h3 {
     font-size: 26px;
     margin-top: 20px;
-    margin-left: -94px; }
+    margin-left: -94px;
+    font-family: Cabin-Bold;
+    color: #ec2b2b;
+    text-shadow: 1.5px 1.5px 1.4px rgba(58, 20, 8, 0.8); }
   .block-two .ad-nature p {
     margin-top: -20px;
     margin-left: -65px;
-    cursor: default; }
+    cursor: default;
+    color: #121241;
+    text-shadow: 1.5px 1.5px 1.4px rgba(192, 200, 246, 0.8); }
+  .block-two .ad-nature hr {
+    position: absolute;
+    width: 70%;
+    margin: 0;
+    margin-left: 57px;
+    top: 106px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent); }
   .block-two .ad-nature h3 {
     font-size: 26px;
     margin-top: 20px;
-    margin-left: -94px; }
+    margin-left: -91.5px;
+    font-family: Cabin-Bold;
+    color: #121241;
+    text-shadow: 1.5px 1.5px 1.4px rgba(192, 200, 246, 0.8); }
   .block-two .ad-city p {
     margin-top: -20px;
     margin-left: -65px;
-    cursor: default; }
+    cursor: default;
+    color: #63f07f;
+    text-shadow: 1.5px 1.5px 1.4px rgba(20, 59, 10, 0.8); }
+  .block-two .ad-city hr {
+    position: absolute;
+    width: 70%;
+    margin: 0;
+    margin-left: 57px;
+    top: 106px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent); }
   .block-two .ad-city h3 {
     font-size: 26px;
     margin-top: 20px;
-    margin-left: -94px; }
+    margin-left: -63.5px;
+    font-family: Cabin-Bold;
+    color: #63f07f;
+    text-shadow: 1.5px 1.5px 1.4px rgba(20, 59, 10, 0.8); }
   .block-two .ad-accessories p {
     margin-top: -20px;
     margin-left: -65px;
-    cursor: default; }
+    cursor: default;
+    color: #ee671b;
+    text-shadow: 1.5px 1.5px 1.4px rgba(0, 0, 0, 0.8); }
+  .block-two .ad-accessories hr {
+    position: absolute;
+    width: 70%;
+    margin: 0;
+    margin-left: 57px;
+    top: 106px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, transparent, rgba(241, 241, 241, 0.75), transparent);
+    background-image: -moz-linear-gradient(left, transparent, rgba(241, 241, 241, 0.75), transparent);
+    background-image: -ms-linear-gradient(left, transparent, rgba(241, 241, 241, 0.75), transparent);
+    background-image: -o-linear-gradient(left, transparent, rgba(241, 241, 241, 0.75), transparent); }
   .block-two .ad-accessories h3 {
     font-size: 26px;
     margin-top: 20px;
-    margin-left: -94px; }
+    margin-left: -95px;
+    font-family: Cabin-Bold;
+    color: #ee671b;
+    text-shadow: 1.5px 1.5px 1.4px rgba(0, 0, 0, 0.8); }
 
 .notblock-outer {
   -webkit-transition: left 0.4s ease-in, top 0.4s ease-in 0.4s;
@@ -281,13 +349,18 @@ body {
       background-color: #a32020; }
       #page-head .small-nav ul li {
         line-height: 80px; }
+        #page-head .small-nav ul li span {
+          font-size: 25px;
+          vertical-align: text-bottom;
+          margin-right: 10px; }
         #page-head .small-nav ul li ul {
           position: absolute;
           display: none;
           visibility: hidden;
           padding: 0px;
           margin: 0px;
-          padding-bottom: 15px; }
+          padding-bottom: 15px;
+          z-index: 99; }
           #page-head .small-nav ul li ul li {
             line-height: 38px; }
       #page-head .small-nav ul li:hover ul {
