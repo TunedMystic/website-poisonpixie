@@ -1,4 +1,4 @@
-// Generated on 2014-05-17 using generator-webapp 0.4.9
+// Generated on 2014-05-22 using generator-webapp 0.4.9
 'use strict';
 
 // # Globbing
@@ -320,12 +320,6 @@ module.exports = function (grunt) {
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*'
                     ]
-                }, {
-                    expand: true,
-                    dot: true,
-                    cwd: '.',
-                    src: ['bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*'],
-                    dest: '<%= config.dist %>'
                 }]
             },
             styles: {
@@ -349,7 +343,7 @@ module.exports = function (grunt) {
             dist: [
                 'sass',
                 'copy:styles',
-                'imagemin',
+                //'imagemin',
                 'svgmin'
             ]
         }

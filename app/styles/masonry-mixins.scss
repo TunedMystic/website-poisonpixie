@@ -1,7 +1,0 @@
-@mixin masonry-transitions($left-time, $left-function, $top-time, $top-function, $delay) {
-  -webkit-transition: left $left-time $left-function, top $top-time $top-function $delay;
-     -moz-transition: left $left-time $left-function, top $top-time $top-function $delay;
-      -ms-transition: left $left-time $left-function, top $top-time $top-function $delay;
-       -o-transition: left $left-time $left-function, top $top-time $top-function $delay;
-          transition: left $left-time $left-function, top $top-time $top-function $delay;
-}

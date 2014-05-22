@@ -1,5 +1,4 @@
 @import 'variables.scss';
-@import 'masonry-mixins.scss';
 
 
 @mixin blog-title($key) {
@@ -148,7 +147,8 @@ body {
       bottom: 0;
       right: 0;
       padding: 5px 10px;
-      background-color: $price-tag-color;
+      color: $price-tag-color;
+      background-color: $price-tag-background-color;
     }
   }
   
@@ -189,6 +189,11 @@ body {
       padding: 4px 19px 2px 19px;
       background-color: $add-to-cart-background-color;
       
+      -webkit-transition: background-color .2s ease;
+         -moz-transition: background-color .2s ease;
+           -o-transition: background-color .2s ease;
+              transition: background-color .2s ease;
+      
       span {
         font-size: 18px;
       }
@@ -217,6 +222,11 @@ body {
   
   .signup form{
     margin-top: 18.5px;
+    
+    p {
+      color: #FFD271;
+      text-shadow: 1px 1px 1px rgba(29, 29, 29, 0.89);
+    }
   }
   
   // social blocks
@@ -260,6 +270,9 @@ body {
         
         left: 50%;
         margin-left: -123.5px;
+        
+        color: #E2F55B;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47);
       }
   }
   .twitter {
@@ -269,6 +282,9 @@ body {
         
         left: 50%;
         margin-left: -107px;
+        
+        color: #5D0480;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47);
       }
   }
   .vimeo {
@@ -278,6 +294,9 @@ body {
         
         left: 50%;
         margin-left: -117px;
+        
+        color: #EB1630;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47);
       }
   }
   .blog {
@@ -374,8 +393,4 @@ body {
       @include blog-title("orange");
     }
   } // .ad-accessories
-}
-
-.notblock-outer {
-  @include masonry-transitions(0.4s, ease-in, 0.4s, ease-in, 0.4s);
 }

@@ -6,6 +6,7 @@
     input, button {
       width: 300px;
       height: 40px;
+      color: $input-color;
     }
     
     p {
@@ -29,6 +30,16 @@
       font-family: Abeezee-Regular;
       font-size: 25px;
       line-height: 25px;
+      
+      -webkit-transition: color .3s ease, background-color .3s ease;
+         -moz-transition: color .3s ease, background-color .3s ease;
+           -o-transition: color .3s ease, background-color .3s ease;
+              transition: color .3s ease, background-color .3s ease;
+    }
+    
+    button:hover {
+      background-color: #64A4E9;
+      color: #863041;
     }
   }
 } // .signup

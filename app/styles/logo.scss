@@ -10,6 +10,16 @@
   color: $logo-color;
   background-color: $logo-background-color;
   padding: 0px 14px;
+  cursor: pointer;
+  
+  -webkit-transition: color .4s ease, background-color .4s ease;
+     -moz-transition: color .4s ease, background-color .4s ease;
+       -o-transition: color .4s ease, background-color .4s ease;
+          transition: color .4s ease, background-color .4s ease;
+  
+  span {
+    text-shadow: 2px 2px 1px rgba(33, 30, 58, 0.4);
+  }
   
   @media only screen and (max-width: $screen-size-ipad-landscape) {
     font-size: $logo-font-size-small;
@@ -21,4 +31,8 @@
 .logo-icon:hover {
   color: $logo-color-hover;
   background-color: $logo-background-color-hover;
+  
+  span {
+    text-shadow: 2px 2px 1px rgba(25, 33, 48, 0.51);
+  }
 }

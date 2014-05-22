@@ -2,10 +2,8 @@
   "name": "website-poisonpixie",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
-    "bootstrap": "~3.1.0",
     "jquery": "~1.11.0",
-    "font-awesome": "~4.1.0",
+    "bootstrap": "~3.1.0",
     "masonry": "~3.1.5"
   },
   "devDependencies": {}

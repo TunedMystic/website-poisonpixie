@@ -2,16 +2,19 @@
 //----------------- Constants ------------------
 $site-min-width: 320px;
 
+$body-background-dark: #100D22;
 
 //----------------------------------------------
 //------------------- Logo ---------------------
 
 $logo-font-size: 90px;
 $logo-height: 130px;
-$logo-color: #000000;
-$logo-background-color: #E0627B;
-$logo-color-hover: #BD25AA;
-$logo-background-color-hover: #CCCCCC;
+
+$logo-color: #130E3A;
+$logo-background-color: #D31955;
+
+$logo-color-hover: #47BE85;
+$logo-background-color-hover: #86128B;
 
 $logo-font-size-small: 60px;
 $logo-height-small: 80px;
@@ -27,9 +30,9 @@ $small-nav-sub-menu-line-height: 38px;
 //----------------------------------------------
 //----------------- Main Nav -------------------
 
-$main-nav-color: #4D83F5;
-$main-nav-background-color: #2B44A7;
-$main-nav-color-highlight: $main-nav-color + 50;
+$main-nav-color: #e7e1f3;
+$main-nav-background-color: #161D38;
+$main-nav-color-highlight: #456fdd;
 $main-nav-height: 80px;
 $main-nav-line-height: 70px;
 $main-nav-padding: ($main-nav-height - $main-nav-line-height) / 2 10px;
@@ -37,10 +40,11 @@ $main-nav-padding: ($main-nav-height - $main-nav-line-height) / 2 10px;
 $main-nav-font-size: 18px;
 
 $news-background-color: #2C2949;
-$news-color: #F5B86B;
+$news-color: #FFC64C;
 $news-font-size: 13px;
 
-$shopping-cart-background: #6638AA;
+$shopping-cart-background: #3858AA;
+$shopping-cart-color: #DBDBDB;
 $shopping-cart-icon-font-size: 50px;
 $shopping-cart-font-size: 16px;
 
@@ -62,10 +66,13 @@ $image-animate-time: 300ms;
 $image-animate-timing-function: ease;
 $image-transition: width $image-animate-time $image-animate-timing-function, height $image-animate-time $image-animate-timing-function, opacity $image-animate-time $image-animate-timing-function;
 
-$price-tag-color: #9BCAC5;
+$price-tag-color: #33204E;
+$price-tag-background-color: #88B4D6;
 
 $add-to-cart-background-color: #AFC948;
 $add-to-cart-background-color-hover: #CAC65F;
+$add-to-cart-background-color: #E7558F;
+$add-to-cart-background-color-hover: #F07829;
 
 $newsletter-background-color: #6E6288;
 
@@ -86,6 +93,8 @@ $blog-green-title-shadow-color: rgba(20, 59, 10, 0.8);
 
 $blog-red-title-color: #EC2B2B;
 $blog-red-title-shadow-color: rgba(58, 20, 8, 0.8);
+
+$input-color: #333;
 
 //----------------------------------------------
 //------------------- Footer -------------------

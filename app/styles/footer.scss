@@ -1,9 +1,14 @@
 @import 'variables.scss';
 
 .page-footer {
-  color: $footer-color;
+  color: $logo-background-color;
   background-color: $footer-background-color;
   padding: 20px;
+  
+  -webkit-transition: background-color .3s ease;
+     -moz-transition: background-color .3s ease;
+       -o-transition: background-color .3s ease;
+          transition: background-color .3s ease;
   
   
   // left-right border for footer
@@ -32,39 +37,37 @@
     background-repeat:no-repeat;
   }
   
-  /*
-  // inner and outer border
-  .plrborder{
-      // outer border
-      border-left:1px solid $footer-background-color;
-      border-right:1px solid $footer-background-color;
-      position:relative;
+  .footer-logo-outer {
+    @media only screen and (max-width: 450px) {
+      padding: 0 !important;
+    }
   }
-  .plrborder:before{
-      // inner border
-      position:absolute;
-      display:block;
-      content:'';
-      border-left:1px solid $footer-background-color;
-      border-right:1px solid $footer-background-color;
-      height:100%;
-      width:100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-  } */
-    
+   
   .footer-logo {
     font-size: 60px;
     font-family: GreatVibes-Regular;
+    margin-top: 15px;
+    
+    
+    text-shadow: 1px 2px 3px rgba(177, 87, 166, 0.34);
     
     p, h2 {
       margin: 0;
       padding: 0;
     }
     
+    p {
+      cursor: pointer;
+    }
+    
     h2 {
       font-size: 110px;
+    }
+    
+    @media only screen and (max-width: 991px) {
+      width: 380px;
+      margin: 0 auto;
+      margin-top: 70px;
     }
     
   } // .footer-logo
@@ -79,40 +82,63 @@
     margin-top: 71px;
     
     button {
+      -webkit-transition: background-color .3s ease;
+         -moz-transition: background-color .3s ease;
+           -o-transition: background-color .3s ease;
+              transition: background-color .3s ease;
+      
       a {
         font-size: 18px;
+        color: #3463DD;
+        
+        -webkit-transition: color .3s ease;
+           -moz-transition: color .3s ease;
+             -o-transition: color .3s ease;
+                transition: color .3s ease;
       }
       
       a:hover {
         text-decoration: none;
+        //color: $shopping-cart-color;
       }
     }
+    
+    button:hover {
+      background-color: #64A4E9;
+    }
+    button:hover a{
+      color: $shopping-cart-color;
+    }
+    
   }
   
   .signup {
     margin-top: 44.5px;
+    margin-bottom: 30px;
   }
   
   
   .main-nav-outer {
     text-align: center;
-    margin-top: 40px;
     
     .main-nav {
       float: none;
       display: inline-block;
       
       li {
-        padding: 0px 10px;
+        padding: 20px;
         
         a {
-          line-height: $main-nav-line-height;
-          padding: 5px 25px;
           font-size: 22px;
-          //font-family: PassionOne-Regular;
-          font-family: Cabin-Bold;
           font-family: Abeezee-Regular;
           color: $main-nav-color;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          
+          -webkit-transition: color 0.4s ease;
+             -moz-transition: color 0.4s ease;
+               -o-transition: color 0.4s ease;
+                  transition: color 0.4s ease;
         }
         
         a:hover {
@@ -123,4 +149,33 @@
       
     }
   }
+  
+  .cite {
+    margin-top: 60px;
+    color: #4E4975;
+    text-align: center;
+    
+    
+    
+    p {
+      a {
+        color: #2861B8;
+        
+        -webkit-transition: color 0.4s ease;
+           -moz-transition: color 0.4s ease;
+             -o-transition: color 0.4s ease;
+                transition: color 0.4s ease;
+      }
+      
+      a:hover {
+        color: #28B86D;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 820px) {
+    background-color: #0E0D13;
+  }
+  
 } // .page-footer

@@ -2,14 +2,14 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>website poisonpixie</title>
-        <meta name="description" content="">
+        <title>Website | Poison Pixie</title>
+        <meta name="description" content="This is a mockup website created by Sandeep Jadoonanan. NOTE: This is not a real company. This website is part of Sandeep Jadoonanan's web design / web development portfolio. None of the images are being used for commercial purposes. The owner of this website does not claim to own these images.">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -64,6 +64,7 @@
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">FAQ</a></li>
                 </ul>
+                
               </li>
             </ul>
 
@@ -974,7 +975,7 @@
             </div>
             
             <!-- Poison Pixie -->
-            <div class="col-md-4">
+            <div class="col-md-4 footer-logo-outer">
               <div class="footer-logo text-center lrborder">
                 <p>Poison Pixie</p>
                 <h2 class="flaticon-butterfly52"></h2>
@@ -1011,31 +1012,35 @@
             </nav>
           </div>
           
-          <div class="row">
-            <p class="text-center">A mockup website designed by <a href="http://smallcode.me" target="_blank">Sandeep Jadoonanan</a></p>
+          <div class="row cite">
+            <p class="text-center">A mockup website designed by <a class="sandeep" href="http://smallcode.me" target="_blank">Sandeep Jadoonanan</a></p>
+            
+            <button class="btn btn-primary" data-toggle="modal" data-target="#site-info">README</button>
           </div>
           
         </div> <!-- footer -->
         
         
         
-        <div class="modal fade" id="dress-options" data-keyboard="true">
-          <div class="modal-dialog">
+        <!-- Modal added-to-cart  -->
+        <div class="modal fade" tabindex="-1" id="added-to-cart" data-keyboard="true">
+          <div class="modal-dialog modal-sm">
             <div class="modal-content">
               
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">An interesting title</h4>
+                <h4 class="modal-title">Item in cart</h4>
               </div> <!-- header -->
               
-              <div class="modal-body">
+              <div class="modal-body" style="font-family: Cabin-Bold;">
                 <div>
-                  <p>Hello</p>
+                  <p>Item added to cart</p>
                 </div>
               </div> <!-- body -->
               
               <div class="modal-footer">
-                <h3>The footer content goes here</h3>
+                <button class="btn btn-primary" data-dismiss="modal">OK</button>
+                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
               </div> <!-- footer -->
               
             </div>
@@ -1044,12 +1049,76 @@
         
         
         
+        <!-- Modal newsletter  -->
+        <div class="modal fade" tabindex="-1" id="newsletter-successful" data-keyboard="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">You're signed up!</h4>
+              </div> <!-- header -->
+              
+              <div class="modal-body" style="font-family: Cabin-Bold;">
+                <div>
+                  <p>Thank you for subscribing to our newsletter.</p>
+                </div>
+              </div> <!-- body -->
+              
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">OK</button>
+                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+              </div> <!-- footer -->
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal Info  -->
+        <div class="modal fade" tabindex="-1" id="site-info" data-keyboard="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Info About this website:</h4>
+              </div> <!-- header -->
+              
+              <div class="modal-body">
+                <div>
+                      <p>This is a mockup website created by <strong>Sandeep Jadoonanan</strong>. </p>
+                      <p>NOTE: This is not a real company.</p>
+                      This website is part of <strong>Sandeep Jadoonanan's</strong> web design / web <p>development portfolio.</p>
+                      <p>None of the images are being used for commercial purposes.</p>
+                      <p>The owner of this website does not claim to own these images.</p>
+                      <p>Ok... I think we're good here...</p>
+                </div>
+              </div> <!-- body -->
+              
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">OK</button>
+                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+              </div> <!-- footer -->
+              
+            </div>
+          </div>
+        </div>
+        
         
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/masonry/dist/masonry.pkgd.js"></script>
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../bower_components/get-style-property/get-style-property.js"></script>
+        <script src="../bower_components/get-size/get-size.js"></script>
+        <script src="../bower_components/eventie/eventie.js"></script>
+        <script src="../bower_components/doc-ready/doc-ready.js"></script>
+        <script src="../bower_components/eventEmitter/EventEmitter.js"></script>
+        <script src="../bower_components/jquery-bridget/jquery.bridget.js"></script>
+        <script src="../bower_components/matches-selector/matches-selector.js"></script>
+        <script src="../bower_components/outlayer/item.js"></script>
+        <script src="../bower_components/outlayer/outlayer.js"></script>
+        <script src="../bower_components/masonry/masonry.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
